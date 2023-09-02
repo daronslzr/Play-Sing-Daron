@@ -21,7 +21,7 @@ body{
     background-color: var(--colorFondo);
     color: var(--colorTexto);
 }
-
+/* #region HEADER   */
 header{
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,9 @@ header{
     
     z-index: 1;
 }
-/*NAVEGACION*/
+/* #endregion HEADER */
+
+/* #region NAVEGACION */
 nav ul{
     display: flex;
     list-style: none;
@@ -57,9 +59,9 @@ nav a{
     height: 55px;
     width: 55px;
 }
-/*FIN NAVEGACION*/
+/* #endregion */
 
-/*ENCABEZADOS*/
+/* #region ENCABEZADOS*/
 h1 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -68,24 +70,29 @@ h2{
     font-size: 1.25rem;
     font-weight: 400;
 }
-/*FIN ENCABEZADOS*/
+/* #endregion ENCABEZADOS*/
 
-/*MAIN*/
+/* #region MAIN*/
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/*FIN MAIN*/
+/* #endregion MAIN*/
 
-/*SECCIONES*/
+/* #region SECCIONES*/
 section{
     height:fit-content;
-    max-width: 1200px;
+    width: 1200px;
     padding: 40px 40px;
     scroll-margin-top: 90px;
 }
-/*HOME*/
+section > h1{
+    text-align: start;
+}
+
+
+/* #region HOME*/
 #home{
     margin-top: 90px;
     object-fit: contain;
@@ -112,11 +119,89 @@ section{
     bottom: 50%;
     text-align: center;
 }
-/*FIN HOME*/
+/* #endregion HOME*/
 
-/*FIN SECCIONES*/
+/* #region TOPCANCIONES */
+.canciones-container{
+    display: flex;
+    justify-content: space-around;
 
-/*FOOTER*/
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border-radius: 2rem;
+    padding: 2rem 0;
+    margin: 2.5rem;
+}
+
+.cinco-canciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.cancion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    border-radius: 0.5rem;
+
+    background-color: var(--colorAcento);
+
+    margin: 1rem 0;
+
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, .1);
+}
+
+.numero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    height: 80px;
+    width: 60px;
+
+    margin-left: 0.5rem;
+}
+
+.numero-top{
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 0.3;
+}
+
+.cancion > img{
+    height: 80px;
+    width: 80px;
+    margin: 0.5rem;
+}
+
+.informacion-cancion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+    width: 200px;
+}
+
+.nombreCancion{
+    font-weight: 700;
+}
+
+.fa-play{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+
+
+/* #endregion TOPCANCIONES*/
+
+/* #endregion SECCIONES*/
+
+/* #region FOOTER*/
 footer{
     display:flex;
     flex-direction: column;
@@ -143,9 +228,9 @@ footer{
 .fa-brands{
     font-size: 3rem;
 }
-/*FIN FOOTER*/
+/* #endregion FOOTER*/
 
-/*BOTON*/
+/* #region BOTON*/
 #botonIrArriba{
     display: none;
     position: fixed;
@@ -175,4 +260,4 @@ footer{
     stroke: var(--blanco);
     stroke-width: 3px;
 }
-/*FIN BOTON*/
+/* #endregion BOTON*/
