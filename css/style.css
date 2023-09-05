@@ -5,7 +5,8 @@
     --blanco: #fff;
     --negro: #000;
     --colorTexto: #7900FF;
-    --colorFooter: #548CFF;
+    --colorSecundario: #548CFF;
+    --colorTer: #93FFD8;
 }
 *{
     box-sizing: border-box;
@@ -95,6 +96,7 @@ section > h1{
 }
 
 /* #region HOME*/
+
 #home{
     margin-top: 90px;
     object-fit: contain;
@@ -155,7 +157,7 @@ section > h1{
 
     margin: 1rem 0;
 
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, .1);
+    box-shadow: 10px 10px rgba(0, 0, 0, .1);
 }
 
 .numero-container{
@@ -274,7 +276,7 @@ section > h1{
 }
 
 .comentario{
-    background-color: var(--colorFooter);
+    background-color: var(--colorSecundario);
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -282,6 +284,69 @@ section > h1{
     color: var(--blanco);
 }
 /* #endregion ARTISTADESTACADO */
+
+/* #region EVENTOS */
+#eventos-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 2rem 10rem;
+}
+
+.evento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+
+    background-color: var(--blanco);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
+.fecha-container{
+    display: column;
+    height: 100%;
+    width: 40px;
+    opacity: 0.5;
+}
+
+.mes{
+    text-align: center;
+    text-transform: uppercase;
+}
+.dia{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.informacionEvento-container{
+    display: column;
+    width: 800px;
+}
+
+
+
+.artistaEvento{
+    font-weight: 700;
+}
+
+.botonBoletos{
+    height: 50px;
+    width: 175px;
+
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--colorSecundario);
+    color: var(--blanco);
+
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* #endregion EVENTOS */
 
 /* #endregion SECCIONES*/
 
@@ -295,7 +360,7 @@ footer{
 
     height: 150px;
 
-    background-color: var(--colorFooter);
+    background-color: var(--colorSecundario);
     color: var(--blanco);
 }
 
