@@ -62,12 +62,12 @@ nav a{
 /* #endregion */
 
 /* #region ENCABEZADOS*/
-h1 {
+h1{
     font-size: 1.75rem;
     font-weight: 700;
 }
 h2{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 /* #endregion ENCABEZADOS*/
@@ -83,14 +83,16 @@ main{
 /* #region SECCIONES*/
 section{
     height:fit-content;
-    width: 1200px;
+    width: 100%;
     padding: 40px 40px;
     scroll-margin-top: 90px;
+
+    
 }
 section > h1{
     text-align: start;
+    border-bottom: 7px solid var(--colorTexto);
 }
-
 
 /* #region HOME*/
 #home{
@@ -122,15 +124,18 @@ section > h1{
 /* #endregion HOME*/
 
 /* #region TOPCANCIONES */
+#topCanciones{
+}
+
 .canciones-container{
     display: flex;
     justify-content: space-around;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
 
     border-radius: 2rem;
-    padding: 2rem 0;
-    margin: 2.5rem;
+    padding: 0rem 6rem;
+    margin: 2rem;
 }
 
 .cinco-canciones{
@@ -198,6 +203,85 @@ section > h1{
 
 
 /* #endregion TOPCANCIONES*/
+
+/* #region ARTISTADESTACADO */
+#artistaDestacado{
+    background-image: linear-gradient(90deg,hsla(220, 100%, 66%, 0.301), hsla(158, 100%, 79%, 0.63));
+}
+
+
+#artista-container{
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--colorFondo);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    margin: 2rem 10rem;
+}
+
+.fotoArtistaDestacado img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 0.5rem;
+}
+
+#informacionArtista{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+
+    width: 100%;
+}
+
+#informacionArtista > h2{
+    margin-bottom: 1rem;
+}
+
+#descripcionArtista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 2rem;
+
+
+}
+
+.descripcionGeneral{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    width: 400px;
+}
+
+.descripcionGeneral p > span{
+    font-weight: 700;
+}
+
+#comentarios-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    row-gap: 2rem;
+
+
+    margin: 2rem 10rem;
+}
+
+.comentario{
+    background-color: var(--colorFooter);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    color: var(--blanco);
+}
+/* #endregion ARTISTADESTACADO */
 
 /* #endregion SECCIONES*/
 
