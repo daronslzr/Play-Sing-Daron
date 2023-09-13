@@ -215,7 +215,7 @@ section>h1 {
     cursor: pointer;
 }
 
-.cancion .fa-play:hover{
+.cancion .fa-play:hover {
     /*opacity: 0.5;*/
     color: var(--colorPrincipal);
 }
@@ -351,21 +351,22 @@ section>h1 {
     font-weight: 700;
 }
 
+.boton{
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+    background-color: var(--colorAcento);
+    color: var(--blanco);
+}
+
 .botonBoletos {
     height: 50px;
     width: 175px;
-
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-
-    background-color: var(--colorAcento);
-    color: var(--blanco);
-
-    font-size: 1.1rem;
-    font-weight: 400;
 }
 
-.botonBoletos:hover {
+.boton:hover {
     background-color: var(--colorPrincipal);
     cursor: pointer;
 }
@@ -375,18 +376,48 @@ section>h1 {
 /* #endregion SECCIONES*/
 
 /* #region FOOTER*/
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 5rem 0;
-
-    height: 150px;
 
     background-color: var(--colorSecundario);
     color: var(--blanco);
 }
+
+/* #region FORM */
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+}
+
+#contacto-form>h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input,
+textarea {
+    padding: 1rem;
+
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+#contacto-form .boton {
+    width: 100%;
+    height: 40px;
+}
+
+/* #endregion FORM */
 
 #footer-iconos {
     display: flex;
@@ -395,12 +426,16 @@ footer {
     align-items: center;
 
     column-gap: 2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .fa-brands {
     font-size: 3rem;
     color: var(--blanco);
+}
+
+.fa-brands:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* #endregion FOOTER*/
@@ -422,7 +457,7 @@ footer {
     z-index: 1;
 }
 
-#reproductor{
+#reproductor {
     display: flex;
     flex-direction: row;
 
@@ -433,7 +468,7 @@ footer {
 
 }
 
-#cerrar{
+#cerrar {
     font-size: 2rem;
 
     position: absolute;
@@ -443,33 +478,34 @@ footer {
     cursor: pointer;
 }
 
-#cerrar:hover{
+#cerrar:hover {
     opacity: 0.5;
 }
 
-.imagenReproductor{
+.imagenReproductor {
     height: 70px;
     width: 70px;
 }
 
-.cancionReproductor{
+.cancionReproductor {
     width: 200px;
     margin: 0 4rem 0 0.5rem;
 }
 
-.pausar{
+.pausar {
     font-size: 3rem;
 
     cursor: pointer;
 }
 
-.pausar:hover{
+.pausar:hover {
     opacity: 0.5;
 }
 
-.pausa .fa-play{
+.pausa .fa-play {
     display: none;
 }
+
 /* #endregion REPRODUCTOR */
 
 /* #region BOTON*/

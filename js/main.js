@@ -75,4 +75,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  //FORMULARIO
+  const contactoForm = document.getElementById('contacto-form');
+
+  contactoForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nombreContacto = document.getElementById('nombreContacto').value;
+    const emailContacto = document.getElementById('emailContacto').value;
+    const mensajeContacto = document.getElementById('mensajeContacto').value;
+
+    alert('Gracias por contactarnos! Nombre: ' + nombreContacto + ' Email: ' + emailContacto + ' Mensaje: ' + mensajeContacto);
+
+    contactoForm.reset();
+  });
+
 });
